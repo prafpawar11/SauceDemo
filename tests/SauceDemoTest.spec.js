@@ -25,6 +25,12 @@ test("@Regression End to End flow", async()=>{
 
     await page.waitForTimeout(3000);
 
+    //used to locate single elements in HTML DOM Structure
+    const container = await page.$("//span[@class='shopping_cart_badge']");
+    
+    await container.click();
 
+    await page.waitForTimeout(3000);
+    
 
 });
