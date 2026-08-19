@@ -1,12 +1,14 @@
 import { test }  from '@playwright/test';
+import env from '../env/env.config.js';
+
 
 test("@Regression End to End flow", async({page})=>{
 
-    await page.goto("https://www.saucedemo.com/");
+    await page.goto(env.BASE_URL);
 
-    await page.locator("#user-name").fill("standard_user");
+    await page.locator("#user-name").fill(env.USERNAME);
 
-    await page.locator("#password").fill("secret_sauce");
+    await page.locator("#password").fill(env.PASSWORD);
     
     await page.waitForTimeout(3000);
     

@@ -21,7 +21,7 @@ export default defineConfig({
             }
         },
         {
-            name : 'firefox',
+            name : 'FIREfox',
             use :
             {
                 browserName : 'firefox'
