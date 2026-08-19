@@ -1,6 +1,7 @@
 import dotenv from 'dotenv';
 
 const envName = process.env.TEST_ENV || 'qa';
+console.log(`Executing Test Cases on ${envName.toUpperCase()}`);
 
 dotenv.config({path : `./env/${envName}.env`, override : true});
 
