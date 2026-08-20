@@ -39,33 +39,4 @@ test("@Regression End to End flow", async({page})=>{
 });
 
 
-test("@Sanity Group Test Cases", async ({page})=>{
-
-    console.log("Sanity Group Test cases");
-    console.log("Sanity Group Test cases");
-    console.log("Sanity Group Test cases");
-    console.log("Sanity Group Test cases");
-    console.log("Sanity Group Test cases");
-    
-});
-
-
-test("@e2e Group Test Cases", async ({page})=>{
-
-    console.log("@e2e Group Test cases");
-    console.log("@e2e Group Test cases");
-    console.log("@e2e Group Test cases");
-    console.log("@e2e Group Test cases");
-    
-});
-
-
-test("@smoke Group Test Cases", async ({page})=>{
-
-    console.log("@smoke Group Test cases");
-    console.log("@smoke Group Test cases");
-    console.log("@smoke Group Test cases");
-    console.log("@smoke Group Test cases");    
-});
-
 
