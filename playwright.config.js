@@ -5,6 +5,12 @@ export default defineConfig({
 
     testDir : './tests',
 
+    reporter: [
+    ['list'],
+    ['allure-playwright', {
+      resultsDir: 'allure-results'
+    }]
+  ],
 
     use :
     {
