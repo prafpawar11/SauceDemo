@@ -14,7 +14,10 @@ export default defineConfig({
 
     use :
     {
-        headless : false
+        headless : false,
+        screenshot : 'on',
+        video : 'on',
+        trace : 'on'
     },
 
     projects :
