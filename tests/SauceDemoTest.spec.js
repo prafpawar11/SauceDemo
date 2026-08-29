@@ -2,7 +2,7 @@ import { test }  from '@playwright/test';
 import env from '../env/env.config.js';
 
 
-test("@Regression End to End flow", async({page})=>{
+test("@Regression  @Smoke @Sanity @e2e End to End flow", async({page})=>{
 
     await page.goto(env.BASE_URL);
 
