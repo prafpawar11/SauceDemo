@@ -68,7 +68,7 @@
 
 					bat "set TEST_ENV = %ENVIRONMENT_NAME% "
 					
-					bat npx playwright test --project=%BROWSER_NAME% --grep %SUITE_NAME% --workers = ${params.WORKER_NUMBER}
+					bat "npx playwright test --project=%BROWSER_NAME% --grep %SUITE_NAME% --workers = ${params.WORKER_NUMBER}"
 
 				}
 			}
