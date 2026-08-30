@@ -64,11 +64,16 @@
 			{
 				steps
 				{
+					script
+					{
 					bat "if exist allure-results rmdir /s /q allure-results"
 
 					bat "set TEST_ENV = %ENVIRONMENT_NAME% "
-					bat "npx playwright test --project=%BROWSER_NAME% --grep %SUITE_NAME%"
-
+						
+					int workers = params.WORKER_NUMBER.toInteger();
+						
+					bat "npx playwright test --project=%BROWSER_NAME% --grep %SUITE_NAME% --workers=%workers%" 
+					}
 				}
 			}
 		}
