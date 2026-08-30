@@ -30,7 +30,7 @@
 				)
 			choice(
 					name : 'WORKER_NUMBER',
-					choices : ['1', '2', '3'. '4'],
+					choices : ['1', '2', '3', '4'],
 					description : 'Select Workers Number'
 				)
 		}
