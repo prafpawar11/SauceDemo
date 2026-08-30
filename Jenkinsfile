@@ -23,12 +23,12 @@
 					description : 'Select Suite Type'
 				)
 		
-			String(
+			string(
 					name : 'BRANCH_NAME',
 					defaultValue : 'master',
 					description : 'Enter Branch Name'
 				)
-			String(
+			string(
 					name : 'WORKER_NUMBER',
 					defaultValue : 1,
 					description : 'Enter Workers Numbr'
@@ -48,7 +48,7 @@
 			{
 				steps
 				{
-					bat npm ci
+					bat "npm ci"
 				}
 			}
 
