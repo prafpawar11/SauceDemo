@@ -28,10 +28,10 @@
 					defaultValue : 'master',
 					description : 'Enter Branch Name'
 				)
-			string(
+			choice(
 					name : 'WORKER_NUMBER',
-					defaultValue : "25%",
-					description : 'Enter Workers Numbr'
+					choices : ['1', '2', '3'. '4'],
+					description : 'Select Workers Number'
 				)
 		}
 		
