@@ -41,7 +41,7 @@
 			{
 				steps
 				{
-					git  url : 'https://github.com/prafpawar11/SauceDemo.git', branch : ${params.BRANCH_NAME}
+					git  url : "https://github.com/prafpawar11/SauceDemo.git", branch : "${params.BRANCH_NAME}"
 				}
 			}
 			stage("Install package.json dependencies ")
