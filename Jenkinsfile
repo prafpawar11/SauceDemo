@@ -41,7 +41,7 @@
 			{
 				steps
 				{
-					git  url : 'https://github.com/prafpawar11/SauceDemo.git', branch : %BRANCH_NAME%
+					git  url : 'https://github.com/prafpawar11/SauceDemo.git', branch : ${params.BRANCH_NAME}
 				}
 			}
 			stage("Install package.json dependencies ")
@@ -68,7 +68,7 @@
 
 					bat set TEST_ENV = %ENVIRONMENT_NAME%
 					
-					bat npx playwright test --project=%BROWSER_NAME% --grep %SUITE_NAME% --workers = %WORKER_NUMBER%
+					bat npx playwright test --project=%BROWSER_NAME% --grep %SUITE_NAME% --workers = ${params.WORKER_NUMBER}
 
 				}
 			}
