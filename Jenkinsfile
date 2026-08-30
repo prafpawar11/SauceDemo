@@ -72,7 +72,7 @@
 						
 					int workers = params.WORKER_NUMBER.toInteger();
 						
-					bat "npx playwright test --project=%BROWSER_NAME% --grep %SUITE_NAME% --workers= ${params.workers}" 
+					bat "npx playwright test --project=%BROWSER_NAME% --grep %SUITE_NAME% --workers=${params.workers}" 
 					}
 				}
 			}
