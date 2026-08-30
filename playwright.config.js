@@ -5,6 +5,10 @@ export default defineConfig({
 
     testDir : './tests',
 
+    fullyParallel : true,
+
+    workers : 1,
+
     reporter: [
     ['list'],
     ['allure-playwright', {
