@@ -66,7 +66,7 @@
 				{
 					bat "if exist allure-results rmdir /s /q allure-results"
 
-					bat set TEST_ENV = %ENVIRONMENT_NAME%
+					bat "set TEST_ENV = %ENVIRONMENT_NAME% "
 					
 					bat npx playwright test --project=%BROWSER_NAME% --grep %SUITE_NAME% --workers = ${params.WORKER_NUMBER}
 
