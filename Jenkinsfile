@@ -70,9 +70,8 @@
 
 					bat "set TEST_ENV = %ENVIRONMENT_NAME% "
 						
-					int workers = params.WORKER_NUMBER.toInteger();
 						
-					bat "npx playwright test --project=%BROWSER_NAME% --grep %SUITE_NAME% --workers=%workers%" 
+					bat "npx playwright test --project=%BROWSER_NAME% --grep %SUITE_NAME% --workers=${params.WORKER_NUMBER.toInteger()}" 
 					}
 				}
 			}
