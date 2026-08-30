@@ -30,7 +30,7 @@
 				)
 			string(
 					name : 'WORKER_NUMBER',
-					defaultValue : 1,
+					defaultValue : "1",
 					description : 'Enter Workers Numbr'
 				)
 		}
