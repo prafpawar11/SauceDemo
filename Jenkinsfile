@@ -30,7 +30,7 @@
 				)
 			string(
 					name : 'WORKER_NUMBER',
-					defaultValue : "1",
+					defaultValue : "25%",
 					description : 'Enter Workers Numbr'
 				)
 		}
@@ -67,8 +67,7 @@
 					bat "if exist allure-results rmdir /s /q allure-results"
 
 					bat "set TEST_ENV = %ENVIRONMENT_NAME% "
-					int workers = params.WORKER_NUMBER.toInteger();
-					bat "npx playwright test --project=%BROWSER_NAME% --grep %SUITE_NAME% --workers = %workers%"
+					bat "npx playwright test --project=%BROWSER_NAME% --grep %SUITE_NAME% --workers = ${params.WORKER_NUMBER}"
 
 				}
 			}
